@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #5D5FFE; -fx-border-color: #F0F1FF; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <top>
+      <AnchorPane prefHeight="27.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="btnQuit" fill="#ff2121" layoutX="1173.0" layoutY="14.0" onMouseClicked="#quit" radius="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="#ffca21" layoutX="1145.0" layoutY="14.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <AnchorPane layoutX="36.0" layoutY="3.0" prefHeight="21.0" prefWidth="201.0" style="-fx-background-color: #F0F1FF; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="3.0" prefHeight="16.0" prefWidth="175.0" text="ChemistryLab ver1.0(beta)">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <effect>
+      <DropShadow spread="0.14" />
+   </effect>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F0F1FF; -fx-border-color: #5D5FFE; -fx-background-radius: 10; -fx-border-radius: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="202.0" prefHeight="429.0" prefWidth="759.0">
+               <children>
+                  <Pane fx:id="hydrogenPane" layoutX="15.0" layoutY="150.0" onMouseClicked="#addHydrogen" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="5.0" layoutY="49.0" text="HYDROGEN" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="10.0" prefHeight="39.0" prefWidth="35.0" text="H" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="1" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="lithumBtn" layoutX="14.0" layoutY="231.0" onMouseClicked="#addLithium" prefHeight="67.0" prefWidth="69.0" style="-fx-background-color: #C8009D; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="46.0" text="LITHIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="39.0" prefWidth="35.0" text="Li" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="35.0" layoutY="-3.0" prefHeight="29.0" prefWidth="32.0" text="3" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="sodiumBtn" layoutX="14.0" layoutY="312.0" onMouseClicked="#addSodium" prefHeight="67.0" prefWidth="69.0" style="-fx-background-color: #C8009D; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="46.0" text="SODIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="7.0" prefHeight="39.0" prefWidth="46.0" text="Na" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="39.0" prefHeight="29.0" prefWidth="32.0" text="11" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="potassiumBtn" layoutX="14.0" layoutY="395.0" onMouseClicked="#addPotassium" prefHeight="67.0" prefWidth="69.0" style="-fx-background-color: #C8009D; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="5.0" layoutY="46.0" text="POTASSIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="13.0" prefHeight="39.0" prefWidth="39.0" text="K" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="39.0" prefHeight="29.0" prefWidth="32.0" text="19" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="beryliumBtn" layoutX="96.0" layoutY="230.0" onMouseClicked="#addBerylium" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #E70061; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="9.0" layoutY="49.0" text="BERYLIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="Be" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="4" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="maggnessiumBtn" layoutX="96.0" layoutY="311.0" onMouseClicked="#addMagnessium" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #E70061; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="3.0" layoutY="49.0" text="MAGNESIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="10.0" prefHeight="39.0" prefWidth="52.0" text="Mg" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="42.0" prefHeight="29.0" prefWidth="32.0" text="12" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="boronBtn" layoutX="237.0" layoutY="230.0" onMouseClicked="#addBoron" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #009D15; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="15.0" layoutY="49.0" text="BORON" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="B" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="36.0" prefHeight="29.0" prefWidth="32.0" text="5" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="carbonBtn" layoutX="318.0" layoutY="230.0" onMouseClicked="#addCarbon" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="49.0" text="CARBON" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="20.0" prefHeight="39.0" prefWidth="52.0" text="C" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="6" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="nitrogenBtn" layoutX="401.0" layoutY="230.0" onMouseClicked="#addNitrogen" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="49.0" text="NITROGEN" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="N" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" layoutY="2.0" prefHeight="29.0" prefWidth="32.0" text="7" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="oxygenBtn" layoutX="481.0" layoutY="230.0" onMouseClicked="#addOxygen" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="49.0" text="OXYGEN" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="O" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="39.0" prefHeight="29.0" prefWidth="32.0" text="8" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="fluorineBtn" layoutX="564.0" layoutY="230.0" onMouseClicked="#addFluorine" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #0093DF; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="9.0" layoutY="49.0" text="FLUORINE" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="9.0" prefHeight="39.0" prefWidth="52.0" text="F" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="9" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="argonBtn" layoutX="644.0" layoutY="312.0" onMouseClicked="#addArgon" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #0069CF; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="49.0" text="ARGON" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="12.0" prefHeight="39.0" prefWidth="52.0" text="Ar" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" layoutY="-2.0" prefHeight="29.0" prefWidth="32.0" text="18" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="alminumBtn" layoutX="237.0" layoutY="311.0" onMouseClicked="#addAluminium" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #22D230; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="5.0" layoutY="49.0" text="ALUMINIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="39.0" prefWidth="52.0" text="Al" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="13" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="siliconBtn" layoutX="318.0" layoutY="311.0" onMouseClicked="#addSilicon" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #009D15; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="49.0" text="SILICON" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="Si" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="14" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="phosphorusBtn" layoutX="401.0" layoutY="312.0" onMouseClicked="#addPhosphorus" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="51.0" text="PHOSPHORUS" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="P" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="15" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="sulphurBtn" layoutX="481.0" layoutY="312.0" onMouseClicked="#addSulphur" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #00CCFE; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="49.0" text="SULPHUR" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="S" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="16" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="calciumBtn" layoutX="96.0" layoutY="394.0" onMouseClicked="#addCalcium" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #E70061; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="11.0" layoutY="49.0" text="CALCIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="51.0" text="Ca" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="20" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="heliumBtn" layoutX="644.0" layoutY="150.0" onMouseClicked="#addHelium" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #0069CF; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="15.0" layoutY="49.0" text="HELIUM" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="39.0" prefWidth="56.0" text="He" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="41.0" layoutY="-2.0" prefHeight="29.0" prefWidth="32.0" text="2" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="neonBtn" layoutX="644.0" layoutY="230.0" onMouseClicked="#addNeon" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #0069CF; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="19.0" layoutY="49.0" text="NEON" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="Ne" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="38.0" prefHeight="29.0" prefWidth="32.0" text="10" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Pane fx:id="chlorineBtn" layoutX="564.0" layoutY="311.0" onMouseClicked="#addChlorine" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: #0093DF#0093DF; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="49.0" text="CHLORINE" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="16.0" prefHeight="39.0" prefWidth="52.0" text="Cl" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="37.0" layoutY="1.0" prefHeight="29.0" prefWidth="32.0" text="17" textAlignment="CENTER" />
+                     </children></Pane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="40.0" prefHeight="46.0" prefWidth="583.0" text="PERIODIC TABLE OF ELEMENTS">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="39.0" layoutY="9.0" prefHeight="223.0" prefWidth="711.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="583.0" text="WELCOME TO YOUR PERSONAL CHEMISTRY LAB">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="60.0" prefHeight="46.0" prefWidth="583.0" text="TO PROCEED PLEASE SELECT ELEMENTS BELOW">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="762.0" layoutY="9.0" prefHeight="327.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <Label layoutX="81.0" layoutY="14.0" text="SELECTED ELEMENTS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="btnSubmit" layoutX="22.0" layoutY="278.0" onMouseClicked="#submit" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #07A65B;">
+                     <children>
+                        <Label layoutX="34.0" layoutY="6.0" text="SUBMIT" textFill="#f0f1ff" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="btnDrop" layoutX="209.0" layoutY="278.0" onMouseClicked="#drop" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #FF0022;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="6.0" text="DROP" textFill="#f0f1ff" />
+                     </children>
+                  </AnchorPane>
+                  <TextArea fx:id="elementView" editable="false" layoutX="22.0" layoutY="52.0" prefHeight="200.0" prefWidth="313.0" style="-fx-wrap-text: true;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="762.0" layoutY="346.0" prefHeight="327.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="142.0" layoutY="21.0" text="Results">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLAbel" contentDisplay="CENTER" layoutX="48.0" layoutY="87.0" prefHeight="67.0" prefWidth="245.0">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="explanationLabel" layoutX="9.0" layoutY="197.0" prefHeight="105.0" prefWidth="333.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="691.0" prefWidth="34.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
