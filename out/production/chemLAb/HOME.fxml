@@ -314,9 +314,9 @@
                         </Label>
                         <Label alignment="CENTER" layoutX="37.0" layoutY="1.0" prefHeight="29.0" prefWidth="32.0" text="17" textAlignment="CENTER" />
                      </children></Pane>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="40.0" prefHeight="46.0" prefWidth="583.0" text="PERIODIC TABLE OF ELEMENTS">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="78.0" prefHeight="46.0" prefWidth="583.0" text="PERIODIC TABLE OF ELEMENTS">
                      <font>
-                        <Font size="22.0" />
+                        <Font name="Berlin X-Bold" size="33.0" />
                      </font>
                   </Label>
                </children>
@@ -325,7 +325,7 @@
                <children>
                   <Label layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="583.0" text="WELCOME TO YOUR PERSONAL CHEMISTRY LAB">
                      <font>
-                        <Font size="22.0" />
+                        <Font name="Waree" size="22.0" />
                      </font>
                   </Label>
                   <Label layoutX="14.0" layoutY="60.0" prefHeight="46.0" prefWidth="583.0" text="TO PROCEED PLEASE SELECT ELEMENTS BELOW">
@@ -333,32 +333,41 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-               </children></AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect></AnchorPane>
             <AnchorPane layoutX="762.0" layoutY="9.0" prefHeight="327.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-background-radius: 20; -fx-border-radius: 20;">
                <children>
-                  <Label layoutX="81.0" layoutY="14.0" text="SELECTED ELEMENTS">
+                  <Label layoutX="63.0" layoutY="14.0" text="SELECTED ELEMENTS">
                      <font>
-                        <Font size="18.0" />
+                        <Font name="Berlin X-Bold" size="24.0" />
                      </font>
                   </Label>
-                  <AnchorPane fx:id="btnSubmit" layoutX="22.0" layoutY="278.0" onMouseClicked="#submit" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #07A65B;">
+                  <AnchorPane fx:id="btnSubmit" layoutX="22.0" layoutY="278.0" onMouseClicked="#submit" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #07A65B; -fx-background-radius: 15;">
                      <children>
                         <Label layoutX="34.0" layoutY="6.0" text="SUBMIT" textFill="#f0f1ff" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="btnDrop" layoutX="209.0" layoutY="278.0" onMouseClicked="#drop" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #FF0022;">
+                  <AnchorPane fx:id="btnDrop" layoutX="209.0" layoutY="278.0" onMouseClicked="#drop" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #FF0022; -fx-background-radius: 15;">
                      <children>
                         <Label layoutX="40.0" layoutY="6.0" text="DROP" textFill="#f0f1ff" />
                      </children>
                   </AnchorPane>
-                  <TextArea fx:id="elementView" editable="false" layoutX="22.0" layoutY="52.0" prefHeight="200.0" prefWidth="313.0" style="-fx-wrap-text: true;" />
+                  <TextArea fx:id="elementView" editable="false" layoutX="15.0" layoutY="52.0" prefHeight="200.0" prefWidth="321.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-wrap-text: true;">
+                     <effect>
+                        <DropShadow />
+                     </effect></TextArea>
                </children>
+               <effect>
+                  <DropShadow />
+               </effect>
             </AnchorPane>
             <AnchorPane layoutX="762.0" layoutY="346.0" prefHeight="327.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #5D5FFE; -fx-background-radius: 20; -fx-border-radius: 20;">
                <children>
-                  <Label contentDisplay="CENTER" layoutX="142.0" layoutY="21.0" text="Results">
+                  <Label contentDisplay="CENTER" layoutX="112.0" layoutY="14.0" text="RESULTS">
                      <font>
-                        <Font size="18.0" />
+                        <Font name="Cantarell Extra Bold" size="27.0" />
                      </font>
                   </Label>
                   <Label fx:id="resultLAbel" contentDisplay="CENTER" layoutX="48.0" layoutY="87.0" prefHeight="67.0" prefWidth="245.0">
@@ -368,6 +377,9 @@
                   </Label>
                   <Label fx:id="explanationLabel" layoutX="9.0" layoutY="197.0" prefHeight="105.0" prefWidth="333.0" />
                </children>
+               <effect>
+                  <DropShadow />
+               </effect>
             </AnchorPane>
          </children>
       </AnchorPane>

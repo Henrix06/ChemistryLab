@@ -165,10 +165,14 @@ public class HomeController {
     public void submit(MouseEvent mouseEvent) {
         if(element.size() == 0){
         resultLAbel.setTextFill(Color.TOMATO);
-        resultLAbel.setText("Server Error : Check");
+        resultLAbel.setText("Error");
 
         explanationLabel.setTextFill(Color.GREEN);
-        explanationLabel.setText("No elementSelected");}
+        explanationLabel.setText("No elementSelected");}else{
+            resultLAbel.setTextFill(Color.TOMATO);
+            resultLAbel.setText("Undefined");
+
+        }
 
         if((element.contains("Hydrogen"))&(element.contains("Hydrogen"))&(element.contains("Oxygen"))){
             resultLAbel.setTextFill(Color.BLACK);
@@ -186,13 +190,13 @@ public class HomeController {
             explanationLabel.setText("Sodium Chloride");
         }
 
-        /*if((element.contains("Hydrogen"))&(element.contains("Hydrogen"))&(element.contains("Oxygen"))&(element.contains("Oxygen"))){
+        if((element.contains("Hydrogen"))&(element.contains("Hydrogen"))&(element.contains("Oxygen"))&(element.contains("Oxygen"))&(element.size()==4)){
             resultLAbel.setTextFill(Color.BLACK);
             resultLAbel.setText("H(2)0(2)");
 
             explanationLabel.setTextFill(Color.GREEN);
             explanationLabel.setText("An Acid");
-        }*/
+        }
 
         if((element.contains("Hydrogen"))&(element.contains("Chlorine"))){
             resultLAbel.setTextFill(Color.BLACK);
@@ -201,11 +205,16 @@ public class HomeController {
             explanationLabel.setTextFill(Color.GREEN);
             explanationLabel.setText("HydroChloride");
         }
+
+
     }
 
     public void drop(MouseEvent mouseEvent) {
         element.removeAll(element);
         elementView.setText(String.valueOf(element));
+
+        resultLAbel.setText("");
+        explanationLabel.setText("");
     }
 
     public void quit(MouseEvent mouseEvent) throws IOException {
